@@ -1,12 +1,10 @@
-repositories{
-    jcenter()
-    flatDir{
-        dirs 'libs'
-    }
+repositories {
+    google()
+    mavenCentral()
 }
 
 dependencies {
-    compile(name:'barcodescanner-release-2.1.5', ext:'aar')
+    implementation 'androidx.appcompat:appcompat:1.6.1'
 }
 
 android {
@@ -15,3 +13,4 @@ android {
         exclude 'META-INF/LICENSE'
     }
 }
+
